@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    font-size: 100%;
+    font: inherit;
+    box-sizing:border-box;
+}
+
+
+body{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html{
+    background-color:#667292;
+    position: relative;
+}
+
+h1{
+    color:#F3B703;
+    font-size: 2.5em;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.frame{
+    background-color:#DB504A;
+    width: 55%;
+    height: 45em;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+
+}
+
+.grid{
+    background-color: #F4F3EE;
+    height: 80%;
+    margin: 0 9%;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px #000;
+    overflow: hidden;
+}
+
+.knob {
+    background-color: #F5F5F5;
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    bottom: 0;
+    border-radius: 100%;
+    margin: 0.6em;
+    cursor: pointer;
+
+}
+.knob:hover{
+    color: rgba(255, 255, 255, 0.925);
+    box-shadow: 3px 3px 6px -1px rgba(182, 102, 92, 0.4);
+}
+
+.knob__left {
+    left: 0;
+    box-shadow: 3px 3px 6px -1px #000;
+}
+  
+.knob__right {
+    right: 0;
+    box-shadow: -3px 3px 6px -1px #000;
+}
+
+.knob__text {
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Permanent Marker', cursive;
+    color: #777;
+}
+
+.row {
+    width: 100%;
+    float: left;
+}
+
+.cell{
+    display: inline-block;
+    height: 100%;
+  }
+  
+  @media only screen and (min-width: 1500px) {
+    .frame{
+      width: 50%;
+      height: 43em;
+    }
+  }
+  
+  @media only screen and (max-width: 1150px) {
+    .frame{
+      width: 70%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.6em;
+    }
+  
+    .frame{
+      height: 31em;
+      width: 80%;
+    }
+  
+    .knob {
+      width: 3em;
+      height: 3em;
+    }
+  }
+  
+  @media only screen and (max-width: 599px) {
+    .frame{
+      width: 90%;
+      height: 25em;
+    }
+  
+    .knob {
+      width: 2.5em;
+      height: 2.5em;
+      margin: 0.3em;
+    }
+  
+    .knob__text {
+      font-size: 0.5em
+    }
+  }
+
+
+  
+
+
+
+  
