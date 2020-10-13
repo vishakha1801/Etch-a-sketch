@@ -30,10 +30,11 @@ h1{
 }
 
 .container{
+    padding-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 60%;
 }
 
 .frame{
@@ -44,6 +45,10 @@ h1{
     position: relative;
     text-align: center;
 
+}
+
+.frame-body{
+  background-color: #667292;
 }
 
 .grid{
@@ -100,10 +105,10 @@ h1{
     height: 100%;
   }
   
-  @media only screen and (min-width: 1500px) {
+  @media only screen and (max-width: 1500px) {
     .frame{
       width: 50%;
-      height: 43em;
+      height: 35rem;
     }
   }
   
